@@ -11,13 +11,15 @@
     <h1>Selamat Datang di Celcius-Farenheit Converter!</h1>
     <h2>Silahkan masukkan nilai suhu dan pilih opsi konversi:</h2>
     <form action="./index.js">
-        <input type="text" value="">
+        <input id="temperature" type="text" value="">
     </form>
     <div>
-        <button onclick="" type="button" class="btn btn-primary btn-sm">to Farenheit</button>
-        <button onclick="" type="button" class="btn btn-primary btn-sm">to Celcius</button>
+        <button onclick="getFarenheit()" type="button" class="btn btn-primary btn-sm">to Farenheit</button>
+        <button onclick="getCelcius()" type="button" class="btn btn-primary btn-sm">to Celcius</button>
     </div>
     
-    <script src="index.js"></script>
+    <p id="display"></p>
+    <script src="celcius.js"></script>
+    <script src="farenheit.js"></script>
 </body>
 </html>
