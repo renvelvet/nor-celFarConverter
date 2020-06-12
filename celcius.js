@@ -1,8 +1,8 @@
 let tempC = document.getElementById("temperature")
 
 // getCelcius helper function
-substractByFiveNinths = (tempC) => tempC - 32
+substractBy32 = (tempC) => tempC - 32
 
-getCelcius = farenheit => substractByFiveNinths(farenheit) * (5/9)
+getCelcius = farenheit => substractBy32(farenheit) * (5/9)
 
 document.getElementById("display").innerHTML = getCelcius(tempC);
